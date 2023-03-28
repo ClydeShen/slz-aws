@@ -4,8 +4,15 @@
   "description": "backend functions",
   "main": "index.js",
   "scripts": {
+    "build": "scripts/build.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.17.14"
+  },
+  "dependencies": {
+    "winston": "^3.8.2"
+  }
 }
