@@ -12,7 +12,7 @@ rm -rf build
 mkdir -p dist
 mkdir -p build
 
-# # Compile JS files to build folder
+# Compile JS files to build folder
 npx esbuild src/functions/**/*.js \
   --bundle \
   --minify \
@@ -24,7 +24,7 @@ npx esbuild src/functions/**/*.js \
 
 echo "Creating zip file..."
 
-cd dist
-zip -r ../build/slz-lambda-fns.zip .
+# zip the built code into the build folder
+zip -r build/slz-lambda-fns.zip dist/
 
 echo "Build complete!"
