@@ -6,6 +6,11 @@ export const routes = {
     POST: {
       fn: (props) => fns.complete(props)
     }
+  },
+  '/openai/test': {
+    GET: {
+      fn: (props) => fns.testFn(props)
+    }
   }
 }
 

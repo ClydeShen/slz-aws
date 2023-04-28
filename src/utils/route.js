@@ -26,6 +26,7 @@ const getProps = (request) => {
 }
 
 const callFn = (request) => {
+  logger.info(JSON.stringify(request))
   const { handlers, method, resource, props } = request
   if (handlers[resource] && handlers[resource][method]) {
     return handlers[resource][method].fn(props)
